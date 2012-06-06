@@ -1,0 +1,8 @@
+This will not work if you don't have the proper EC2-related environment
+variables set. You also need to create a .ssh directory inside of
+instance-files/ with a pair of public and private rsa keys.
+
+You must be on us-east-1 because the ami only lives there
+
+TODO: Autogenerate a new pair of public and private RSA keys when running the
+script.
