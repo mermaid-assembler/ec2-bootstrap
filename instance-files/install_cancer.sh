@@ -14,7 +14,7 @@ cpanm --force Log::Log4perl
 cpanm --force Date/Calc.pm
 cpanm --force XMLRPC::Lite
 
-#yes "" | perl -MCPAN -e "install Bundle::CPAN" # This won't run automatically because Perl is a piece of shit
+#yes "" | perl -MCPAN -e "install Bundle::CPAN" # This won't run automatically because Perl is bad
 #yes "" | perl -MCPAN -e "install Log::Log4perl"
 #yes "" | perl -MCPAN -e "install 'Date/Calc.pm'"
 #yes "" | perl -MCPAN -e "install XMLRPC::Lite"
@@ -24,6 +24,13 @@ apt-get install -y openmpi-bin libopenmpi-dev libboost-mpi-dev libboost-filesyst
 wget http://sparsehash.googlecode.com/files/sparsehash_2.0.2-1_i386.deb
 dpkg -i sparsehash_2.0.2-1_i386.deb
 rm sparsehash_2.0.2-1_i386.deb
+# libconfig
+wget http://www.hyperrealm.com/libconfig/libconfig-1.4.9.tar.gz
+tar -zxvf libconfig-1.4.9.tar.gz
+rm libconfig-1.4.9.tar.gz
+cd libconfig-1.4.9/
+./configure && make && make install
+cd ..
 
 # For RAID
 # Installing mdadm recommends postfix as a dependency...
