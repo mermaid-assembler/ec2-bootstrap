@@ -24,13 +24,6 @@ apt-get install -y openmpi-bin libopenmpi-dev libboost-mpi-dev libboost-filesyst
 wget http://sparsehash.googlecode.com/files/sparsehash_2.0.2-1_i386.deb
 dpkg -i sparsehash_2.0.2-1_i386.deb
 rm sparsehash_2.0.2-1_i386.deb
-# libconfig
-wget http://www.hyperrealm.com/libconfig/libconfig-1.4.9.tar.gz
-tar -zxvf libconfig-1.4.9.tar.gz
-rm libconfig-1.4.9.tar.gz
-cd libconfig-1.4.9/
-./configure && make && make install
-cd ..
 
 # For RAID
 # Installing mdadm recommends postfix as a dependency...
