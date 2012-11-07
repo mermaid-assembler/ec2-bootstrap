@@ -14,7 +14,7 @@ cpanm --force Log::Log4perl
 cpanm --force Date/Calc.pm
 cpanm --force XMLRPC::Lite
 
-#yes "" | perl -MCPAN -e "install Bundle::CPAN" # This won't run automatically because Perl is a piece of shit
+#yes "" | perl -MCPAN -e "install Bundle::CPAN" # This won't run automatically because Perl has bad quirks
 #yes "" | perl -MCPAN -e "install Log::Log4perl"
 #yes "" | perl -MCPAN -e "install 'Date/Calc.pm'"
 #yes "" | perl -MCPAN -e "install XMLRPC::Lite"
