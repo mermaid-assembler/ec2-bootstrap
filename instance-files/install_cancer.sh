@@ -20,7 +20,7 @@ cpanm --force XMLRPC::Lite
 #yes "" | perl -MCPAN -e "install XMLRPC::Lite"
 
 # Mermaid dependencies
-apt-get install -y openmpi-bin libopenmpi-dev libboost-mpi-dev libboost-filesystem-dev
+apt-get install -y openmpi-bin libopenmpi-dev libboost-mpi-dev libboost-filesystem-dev libboost-dev
 wget http://sparsehash.googlecode.com/files/sparsehash_2.0.2-1_i386.deb
 dpkg -i sparsehash_2.0.2-1_i386.deb
 rm sparsehash_2.0.2-1_i386.deb
